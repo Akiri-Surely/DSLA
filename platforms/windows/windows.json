@@ -1,0 +1,51 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"OneSignalPush\"><param name=\"ios-package\" value=\"OneSignalPush\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "dsla"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "dsla"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "onesignal-cordova-plugin.OneSignal",
+            "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+            "pluginId": "onesignal-cordova-plugin",
+            "clobbers": [
+                "OneSignal"
+            ]
+        },
+        {
+            "id": "onesignal-cordova-plugin.OneSignalPushProxy",
+            "file": "plugins/onesignal-cordova-plugin/src/windows/OneSignalPushProxy.js",
+            "pluginId": "onesignal-cordova-plugin",
+            "merges": [
+                ""
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.3",
+        "onesignal-cordova-plugin": "2.3.3"
+    }
+}

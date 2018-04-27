@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Delta State Government Land Acquistion" />
+	<meta name="keywords" content="Delta State, Nigerian Government, Government land, Delta land Acquistion" />
+	<meta name="author" content="Akiri Surely" />
+
+
+	
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="header-inner">
+					<h1><a href="index.html">DSLA<span>.</span></a></h1>
+					<nav role="navigation">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="login.html">Login</a></li>
+							<li class="call"><a href="tel://+254723124732"><i class="icon-phone"></i> +254 7231 24 732</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	
+	</header>
+
+	<div class="fh5co-page-title" style="background-image: url(images/slide_7.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 animate-box">
+					<h1><span class="colored">Access</span> DSLA</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="fh5co-contact animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+                       <a href="https://deltastate.gov.ng/about-delta-state"> <center><img src="images/dslalogo.jpg" alt="flag" height="150" width="150"></center></a>
+                    <div>
+
+					<h2 style="margin: 10px">Please Fill in all Fields</h2>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Username" type="text" id="txt_usr">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Name" type="text" id="txt_nme">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Password" type="password" id="txt_pwd">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Local Government Area" type="text" id="txt_lga">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Email" type="text"  id="txt_eml">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Phone" type="text" id="txt_pne">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Address" type="text" id="txt_adr">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<center><input value="Register" class="btn btn-primary" type="submit" id="buttonSignUp" ></center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	
+	
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+<script>
+	 $('#buttonSignUp').click(function()
+      {
+          var username = $.trim($('#txt_usr').val());
+          var name = $.trim($('#txt_nme').val());
+          var password = $.trim($('#txt_pwd').val());
+          var lga = $.trim($('#txt_lga').val());
+          var email = $.trim($('#txt_eml').val());
+          var phone = $.trim($('#txt_pne').val());
+          var address = $.trim($('#txt_adr').val());
+
+          if(!username 
+          || !name
+          || !password
+          || !lga
+          || !email
+          || !phone
+          || !address)
+          {
+          	alert('All fields must be filled!');
+          }
+          else
+          {
+          	$.post('https://dsla.snaptickets.me/ss.php?signup',{1:username,2:name,3:password,4:lga,5:email,6:phone,7:address},function(response)
+	        {
+	            if($.trim(response)=="success")
+	            {
+	              location.href = 'login.html';
+	            }
+	            else if($.trim(response)=="error")
+	            {
+	              alert('Username already exists');
+	            }
+	        });
+          } 
+      });
+</script>
+
+
+	</body>
+</html>
+
